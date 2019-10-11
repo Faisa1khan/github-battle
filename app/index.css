@@ -1,4 +1,5 @@
-html. body,
+html,
+body,
 #app {
   margin: 0;
   height: 100%;
@@ -6,8 +7,8 @@ html. body,
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
 
 ul {
@@ -23,11 +24,19 @@ li {
   margin: 0 auto;
   padding: 50px;
 }
+
+.dark {
+  color: #dadada;
+  background: #1c2022;
+  min-height: 100%;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .btn-clear {
   border: none;
   background: transparent;
@@ -39,25 +48,35 @@ li {
   text-decoration: none;
   color: inherit;
 }
+.nav li {
+  margin-right: 10px;
+}
 
 .grid {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 .space-around {
   justify-content: space-around;
 }
+
+.space-between {
+  justify-content: space-between;
+}
+
 .header-lg {
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 300;
   margin: 20px;
 }
+
 .header-sm {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 300;
   margin: 10px;
 }
+
 .avatar {
   width: 150px;
   height: 150px;
@@ -75,6 +94,7 @@ li {
   text-decoration: none;
   font-weight: bold;
 }
+
 .card-list {
   margin: 20px 0;
   font-size: 20px;
@@ -100,22 +120,24 @@ li {
   border-radius: 3px;
 }
 
-.repo {
+.card {
   margin: 10px 0;
   width: 250px;
   padding: 20px;
 }
 
-.repo a {
+.card a {
   text-decoration: none;
 }
 
-.repo img {
+.card img {
   margin-bottom: 8px;
 }
-.instruction-container {
+
+.instructions-container {
   margin: 100px 0;
 }
+
 .container-sm {
   width: 80%;
   margin: 0 auto;
@@ -130,6 +152,7 @@ li {
   flex: 1;
   min-width: 300px;
 }
+
 .battle-instructions svg {
   padding: 40px;
   border-radius: 3px;
@@ -139,6 +162,7 @@ li {
   display: flex;
   flex-direction: column;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -220,6 +244,33 @@ li {
 .player-info .link {
   margin-left: 10px;
 }
+
 .btn-space {
   margin: 40px auto;
+}
+
+.error {
+  color: #ff1616;
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+.bg-dark {
+  background: rgb(36, 40, 42);
+  border-radius: 3px;
+}
+
+.player-inputs .input-dark {
+  color: #dadada;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.light-btn {
+  color: #000;
+  background: #aaa8a8;
+}
+
+.light-btn:disabled {
+  background: #292929;
+  color: #4a4a4a;
 }
